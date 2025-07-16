@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || '5fabbe5adbmsh8715d3174c2eff3p196ae3jsne1cc0eb6403b';
+const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY || '';
 const RAPIDAPI_HOST = 'jsearch.p.rapidapi.com';
 
 export async function POST(req: NextRequest) {
