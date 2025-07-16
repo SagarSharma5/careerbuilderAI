@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Red%20Rose:700|Red%20Rose:400');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --text-50: #efeef7;
+    --text-100: #e0dcef;
+    --text-200: #c1b9df;
+    --text-300: #a296cf;
+    --text-400: #8273bf;
+    --text-500: #6350af;
+    --text-600: #4f408c;
+    --text-700: #3c3069;
+    --text-800: #282046;
+    --text-900: #141023;
+    --text-950: #0a0811;
+
+    --background-50: #eeebfa;
+    --background-100: #ded6f5;
+    --background-200: #bdadeb;
+    --background-300: #9c85e0;
+    --background-400: #7a5cd6;
+    --background-500: #5933cc;
+    --background-600: #4729a3;
+    --background-700: #361f7a;
+    --background-800: #241452;
+    --background-900: #120a29;
+    --background-950: #090514;
+
+    --primary-50: #eeeafa;
+    --primary-100: #ddd6f5;
+    --primary-200: #baacec;
+    --primary-300: #9883e2;
+    --primary-400: #755ad8;
+    --primary-500: #5330cf;
+    --primary-600: #4227a5;
+    --primary-700: #321d7c;
+    --primary-800: #211353;
+    --primary-900: #110a29;
+    --primary-950: #080515;
+
+    --secondary-50: #ede9fb;
+    --secondary-100: #dbd3f8;
+    --secondary-200: #b7a7f1;
+    --secondary-300: #937bea;
+    --secondary-400: #6f50e2;
+    --secondary-500: #4b24db;
+    --secondary-600: #3c1daf;
+    --secondary-700: #2d1584;
+    --secondary-800: #1e0e58;
+    --secondary-900: #0f072c;
+    --secondary-950: #080416;
+
+    --accent-50: #ece8fd;
+    --accent-100: #d9d0fb;
+    --accent-200: #b4a1f7;
+    --accent-300: #8e72f3;
+    --accent-400: #6843ef;
+    --accent-500: #4314eb;
+    --accent-600: #3510bc;
+    --accent-700: #280c8d;
+    --accent-800: #1b085e;
+    --accent-900: #0d042f;
+    --accent-950: #070217;
+
+    --border: 240 5.9% 10%;
+    --input: 240 5.9% 10%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --text-50: #0a0811;
+    --text-100: #141023;
+    --text-200: #282046;
+    --text-300: #3c3069;
+    --text-400: #4f408c;
+    --text-500: #6350af;
+    --text-600: #8273bf;
+    --text-700: #a296cf;
+    --text-800: #c1b9df;
+    --text-900: #e0dcef;
+    --text-950: #efeef7;
+
+    --background-50: #090514;
+    --background-100: #120a29;
+    --background-200: #241452;
+    --background-300: #361f7a;
+    --background-400: #4729a3;
+    --background-500: #5933cc;
+    --background-600: #7a5cd6;
+    --background-700: #9c85e0;
+    --background-800: #bdadeb;
+    --background-900: #ded6f5;
+    --background-950: #eeebfa;
+
+    --primary-50: #080515;
+    --primary-100: #110a29;
+    --primary-200: #211353;
+    --primary-300: #321d7c;
+    --primary-400: #4227a5;
+    --primary-500: #5330cf;
+    --primary-600: #755ad8;
+    --primary-700: #9883e2;
+    --primary-800: #baacec;
+    --primary-900: #ddd6f5;
+    --primary-950: #eeeafa;
+
+    --secondary-50: #080416;
+    --secondary-100: #0f072c;
+    --secondary-200: #1e0e58;
+    --secondary-300: #2d1584;
+    --secondary-400: #3c1daf;
+    --secondary-500: #4b24db;
+    --secondary-600: #6f50e2;
+    --secondary-700: #937bea;
+    --secondary-800: #b7a7f1;
+    --secondary-900: #dbd3f8;
+    --secondary-950: #ede9fb;
+
+    --accent-50: #070217;
+    --accent-100: #0d042f;
+    --accent-200: #1b085e;
+    --accent-300: #280c8d;
+    --accent-400: #3510bc;
+    --accent-500: #4314eb;
+    --accent-600: #6843ef;
+    --accent-700: #8e72f3;
+    --accent-800: #b4a1f7;
+    --accent-900: #d9d0fb;
+    --accent-950: #ece8fd;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background-50 text-text-900 font-red-rose;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-red-rose font-bold;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  h4 {
+    @apply text-h4;
+  }
+
+  h5 {
+    @apply text-h5;
+  }
+
+  small {
+    @apply text-small;
+  }
+}
+
+/* Custom scrollbar for chatbot */
+.chatbot-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.chatbot-scrollbar::-webkit-scrollbar-thumb {
+  background: theme('colors.primary.500');
+  border-radius: 6px;
+}
+
+.chatbot-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.primary.500') transparent;
+}
